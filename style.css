@@ -35,7 +35,7 @@ nav ul li a{
     margin-left: 30px;
 }
 nav ul li a:hover, a.active{
-    background-color: #E33741;
+    background-color: rgb(29, 28, 28);
     border-radius: 5px;
 }
 .main-content{
@@ -114,7 +114,7 @@ nav ul li a:hover, a.active{
     border: none;
     color: #fff;
     font-weight: 500;
-    background-color:  #E33741;
+    background-color:  rgb(29, 28, 28);
 }
 .amount{
     display: flex;
