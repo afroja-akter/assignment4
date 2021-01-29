@@ -1,4 +1,6 @@
  
+ // function for increment and decrement value
+
 function howManyTickets(ticket, isIncrease){
     const incrementValue = document.getElementById(ticket +'-count');
     const count = parseInt(incrementValue.value);
@@ -14,6 +16,8 @@ function howManyTickets(ticket, isIncrease){
     calculateTotal();
 };
 
+// function for calculate total amount
+
 function calculateTotal(){
     const firstClassTicketCount = getInputValue('firstClass');
     const economyTicketCount =  getInputValue('economy');
@@ -26,6 +30,7 @@ function calculateTotal(){
     document.getElementById('total-amount').innerText = '$' + totalAmount;
 
 }
+// function for get input value
 
 function getInputValue(ticket){
     const ticketInput = document.getElementById(ticket + '-count');
