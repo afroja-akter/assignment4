@@ -1,5 +1,5 @@
  
- // function for increment and decrement value
+ // function for increment value and decrement and confirm message 
 
 function howManyTickets(ticket, isIncrease){
     const incrementValue = document.getElementById(ticket +'-count');
@@ -14,10 +14,28 @@ function howManyTickets(ticket, isIncrease){
 
     incrementValue.value = newCount;
 
-    if(incrementValue.value > 0){
+    if( newCount > 0){
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("confirm-button");
         var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+           }
+        }
+
+    }
+    else{
+        var modal = document.getElementById("myModalTwo");
+        var btn = document.getElementById("confirm-button");
+        var span = document.getElementsByClassName("close")[1];
 
         btn.onclick = function() {
         modal.style.display = "block";
